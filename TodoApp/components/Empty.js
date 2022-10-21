@@ -1,13 +1,11 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 
-const source ={url: 'https://via.placeholder.com/150'};
-
 function Empty(){
     return (
         <View style={styles.block}>
             <Image
-             source={{source}} 
+             source={require('../assets/images/young_and_happy.png')}
              style={styles.image}
              resizeMode="center"
             />
@@ -23,9 +21,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     image: {
-        width: 300,
-        height: 200,
-        backgroundColor: 'gray',
+        width: 240,
+        height: 179,
+        marginBottom: 16,
     },
     description: {
         fontSize: 24,
